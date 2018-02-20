@@ -1,0 +1,20 @@
+"//" - an inline comment
+"<<" - the output operator
+"C++" - the language
+"comment" - text for humans only
+"compiler" - the program that translates C++ source code to machine code
+"compile-time error" - an error that is discovered during compilation of the source code
+"cout" - the abbreviation for character output stream
+"executable" - the output of the linker, something that a computer can execute
+"function" - a named part of code logic containing statements that do things
+"header" - a .h file, contains declarations
+"IDE" - integrated development environment
+"#include" - an include directive, replaced during preprocessing with the text from the supplied header file
+"library" - code that typically was written by somebody else that you can leverage
+"linker" - a program that takes object files and links them together into an executable
+"main()" - the one required entry point function of every C++ program
+"object code" - the result of compilation
+"output" - the result
+"program" - all code paths that can be hit from the main() function
+"source code" - what is within .cpp files
+"statement" - a line of source code that does something
