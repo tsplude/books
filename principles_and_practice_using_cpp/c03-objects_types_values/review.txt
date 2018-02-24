@@ -1,0 +1,99 @@
+1. What is meant by the term prompt?
+
+	To 'prompt' the user for input
+
+2. Which operator do you use to read into a variable?
+
+	The '>>' operator.
+
+3. If you want the user to input an integer value into your program for a variable named number, what are two lines of code you could write to ask the user to do it and to input the value int your program?
+
+	cout << "Give me a number:" << endl;
+	cin >> number;
+
+4. What is '\n' called and what purpose does it serve?
+
+	The 'new-line' character. It delimits lines of a file
+
+5. What terminates input into a string?
+
+	The 'end-of-file' character. Linux/unix this is Ctrl+D
+
+6. What terminates input into an integer?
+
+	Non-numeric input
+
+7. too easy
+
+8. What is an object?
+
+	Some memory that holds a value of a given type
+
+9. What is a literal?
+
+	A particular fundamental value
+
+10. What kinds of literals are there?
+
+	String literals, int literals, double literals
+
+11. What is a variable?
+
+	A named object
+
+12. What are typical sizes for a char, an int, and a double?
+
+	char = 1 byte
+	int = 4 bytes
+	double = 8 bytes
+
+13. What measures do we use for the size of small entities in memory, such as ints and strings?
+
+	bytes and bits
+
+14. What is the difference between = and ==?
+
+	= is the assignment operator.
+	== is the binary equality operator
+
+15. What is a definition?
+
+	A declaration that sets aside memory for an object
+
+16. What is an initialization and how does it differ from an assignment?
+
+	An initialization is the birth of a named variable's value. It always happens to a named variable that does not have a value in its memory location yet. An assignment is an initialization that must clear the memory address of its contents before putting the new value there.
+
+17. What is string concatenation and how do you make it work in C++?
+
+	string s = "abc" + "def"; // s == "abcdef"
+
+18. Which of the following are legal names in C++? If a name is not legal, why not?
+
+	This_little_pig		This_1_is_fine		2_For_1_special
+	latest thing		the_$12_method		_this_is_ok
+	MiniMineMine		number				correct?
+
+	the_$12_method and correct? are not ok - invalid characters ($, ?)
+	2_For_1_special is incorrect because it does not start with a letter
+	_this_is_ok is OK but runs the risk of clashing with a language implementation name since they use leading underscores
+
+19. Give five examples of legal names that you shouldn't use because they ar likely to cause confusion
+
+	String, string, f0o, foO, f00
+
+20. What are some good rules for choosing names?
+
+	Not too long, not too short, descriptive
+
+21. What is type safety and why is it important?
+
+	The notion of always performing sanctioned operations on types/objects. It is important so as to prevent undefined behavior.
+
+22. Why can conversion from double to int be a bad thing?
+
+	You can inadvertantly lose information (2.3 -> 2)
+
+23. Define a rule to help decide if a conversion from one type to another is safe or unsafe.
+
+	If sizeof(a) > sizeof(b), chances are the conversion is unsafe
